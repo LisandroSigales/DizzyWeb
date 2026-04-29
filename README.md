@@ -1,2 +1,2 @@
 # DizzyWeb
-Portfolio de animador e ilustrador
+portfolio de animador e ilustrador lisandro sigales
