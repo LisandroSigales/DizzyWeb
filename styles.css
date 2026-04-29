@@ -955,13 +955,20 @@ footer{
 .ytverde{
     display: flex;
     flex-direction: row;
-        align-items: center;
+    align-items: center;
 }
 .igverde{
     margin-top: 15%;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.ytverde img{
+
+}
+.igverde img{
+    width: 20%;
+    height: auto;
 }
 .ytv{
     font-family: playwriteustrad;
