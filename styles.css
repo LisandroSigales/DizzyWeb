@@ -880,7 +880,6 @@ header{
     z-index: 2;
 }
 .piso{
-    position: relative;
     width: 100%;
     height: 150px;
     background: linear-gradient(#0C1427, #272857);
@@ -903,17 +902,28 @@ footer{
     position: relative;
     overflow: hidden;
 }
+
+.procesodeguess{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin-top: -400px;
+    margin-bottom: 500px;
+}
 .miproceso{
+    position: absolute;
     font-family: playwriteustrad;
     color: white;
     font-weight: lighter;
     font-size: 40px;
-    margin-left: 30%;
-    padding-top: 60px;
-    padding-bottom: none;
+    margin-right: 40%;
+    margin-top: -5%;
+    z-index: 3;
 }
 .cine{
-    position: relative;
+    position: absolute;
+    z-index: 2;
 
 }
 
@@ -923,10 +933,10 @@ footer{
     width: 470px;
     height: 280px;
     aspect-ratio: 16 / 9;
-    display: block;
+    display: flex;
     border: none;
     z-index: 3;
-    margin-top: -595px;
+    margin-top: px;
     margin-left: 64%;
 }
 .contacto3{
