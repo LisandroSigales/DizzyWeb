@@ -250,17 +250,32 @@ header {
     font-weight: bolder;
     font-size: 60px;
     margin-left: 81%;
+    filter: blur(1px);
 
 }
 
 .me2 {
     position: absolute;
     font-family: playwriteustrad;
-    color: rgb(255, 119, 221);
+    color: rgb(253, 156, 224);
     font-weight: lighter;
     font-size: 60px;
     margin-left: 81%;
-    filter: blur(2px);
+    
+}
+
+@keyframes me2 {
+    0% {
+        
+        
+    }
+
+    50% {
+
+    }
+    100% {
+        
+    }
 }
 
 .aboutmetitulo {
