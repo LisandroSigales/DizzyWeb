@@ -1204,9 +1204,11 @@ textarea {
 }
 
 .boton-enviar:hover {
-    background-color: #ff2cb4;
+    background-color: #6BC9FF;
     transform: scale(1.05);
+    color: #ff2cb4;
 }
+
 
 .saludo {
     display: flex;
