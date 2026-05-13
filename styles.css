@@ -243,25 +243,113 @@ header {
     margin-left: 72%;
 }
 
-.me1 {
-    position: absolute;
-    font-family: playwriteustrad;
-    color: rgb(222, 29, 174);
-    font-weight: bolder;
-    font-size: 60px;
-    margin-left: 81%;
-    filter: blur(1px);
+@keyframes parpadeoFallando {
+  0%, 100% {
+    --me1-color: rgb(222, 29, 174);
+    --me1-blur: blur(1px);
+    --me2-opacity: 1;
+  }
+  5% {
+    --me1-color: rgb(43, 48, 78);
+    --me1-blur: blur(0.2px);       
+    --me2-opacity: 0.1;           
+  }
+
+  5.2% {
+    --me1-color: rgb(222, 29, 174);
+    --me1-blur: blur(1px);
+    --me2-opacity: 1;
+   }
+   5.3% {
+    --me1-color: rgb(43, 48, 78);
+    --me1-blur: blur(0.2px);       
+    --me2-opacity: 0.1;           
+  }
+
+5.6% {
+    --me1-color: rgb(222, 29, 174);
+    --me1-blur: blur(1px);
+    --me2-opacity: 1;
+   }
+ 7% {
+    --me1-color: rgb(43, 48, 78);
+    --me1-blur: blur(0.2px);       
+    --me2-opacity: 0.1;           
+  }
+  9%, 60% {
+    --me1-color: rgb(222, 29, 174);
+    --me1-blur: blur(1px);
+    --me2-opacity: 1;
+  }
+
+
+ 61% {
+    --me1-color: rgb(43, 48, 78);
+    --me1-blur: blur(0.2px);
+    --me2-opacity: 0.1;
+  }
+
+
+  62% {
+    --me1-color: rgb(222, 29, 174);
+    --me1-blur: blur(1px);
+    --me2-opacity: 1;
+  }
+
+   64% {
+    --me1-color: rgb(43, 48, 78);
+    --me1-blur: blur(0.2px);
+    --me2-opacity: 0.1;
+  }
+
+
+  65%,100% {
+    --me1-color: rgb(222, 29, 174);
+    --me1-blur: blur(1px);
+    --me2-opacity: 1;
+  }
+
+
 
 }
 
+
+.about {
+  font-family: nata-sans;
+  color: rgb(157, 213, 27);
+  font-weight: bolder;
+  font-size: 60px;
+  margin-left: 72%;
+}
+
+.me1 {
+  position: absolute;
+  font-family: playwriteustrad;
+  color: rgb(222, 29, 174);
+  font-weight: bolder;
+  font-size: 60px;
+  margin-left: 81%;
+  filter: blur(1px);
+  animation: parpadeoFallando 30s infinite ease-in-out;
+}
+
 .me2 {
-    position: absolute;
-    font-family: playwriteustrad;
-    color: rgb(253, 156, 224);
-    font-weight: lighter;
-    font-size: 60px;
-    margin-left: 81%;
-    
+  position: absolute;
+  font-family: playwriteustrad;
+  color: rgb(253, 156, 224);
+  font-weight: lighter;
+  font-size: 60px;
+  margin-left: 81%;
+  opacity: 1;
+  animation: parpadeoFallando 30s infinite ease-in-out;
+}
+.me1 {
+    color: var(--me1-color);
+    filter: var(--me1-blur);
+}
+
+.me2 {
+    opacity: var(--me2-opacity);
 }
 
 
@@ -1059,8 +1147,8 @@ footer {
     display: flex;
     border: none;
     z-index: 3;
-    margin-top: px;
-    margin-left: 64%;
+    margin-top: 80px;
+    margin-left: 140px;
 }
 
 .contacto3 {
