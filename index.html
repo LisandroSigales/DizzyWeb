@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -173,24 +176,42 @@
     <div id="ilustracion" class="ilutitulo">2. Ilustración</div>
     <div class="tienda"><img src="img/Tienda.png" alt="tienda"></div>
     <div class="ilustraciones">
+     
       <div class="are-u-there">
-        <img src="img/are-u-there.jpg" alt="are u there">
+        <a href="img/are-u-there.jpg" data-fancybox data-caption="galeria">
+          <img src="img/are-u-there.jpg" alt="are u there">
       </div>
+      
       <div class="gemma">
-        <img src="img/Gemma.jpg" alt="Gemma">
+        <a href="img/Gemma.jpg" data-fancybox data-caption="galeria">
+          <img src="img/Gemma.jpg" alt="Gemma">
+        </a>  
       </div>
+   
       <div class="duo">
+        <a href="img/duo.jpg" data-fancybox data-caption="galeria">
         <img src="img/duo.jpg" alt="duo">
+      </a>
       </div>
+     
       <div class="lesbians">
+        <a href="img/Lesbians.jpg" data-fancybox data-caption="galeria">
         <img src="img/Lesbians.jpg" alt="lesbianas">
+      </a>
       </div>
+     
       <div class="rocio">
+        <a href="img/Rocio.png" data-fancybox data-caption="galeria">
         <img src="img/Rocio.png" alt="Rocio">
+      </a>
       </div>
+     
       <div class="millen">
+        <a href="img/Millen.jpg" data-fancybox data-caption="galeria">
         <img src="img/Millen.jpg" alt="Millen">
+      </a>
       </div>
+      
     </div>
     <div class="ladrillos"><img src="img/Ladrillos.png" alt="ladrillos"></div>
   </div>
@@ -210,11 +231,30 @@
             <p>Serie de composiciones en las que dibujé con un estilo cartoon los albumes de mi cantante favorito
               IG:@Dizzy.D3sign</p>
           </div>
-          <div class="fanartconan">
-            <div class="conankidkrow"><img src="img/conankidkrow.jpg" alt="conankidkrow"></div>
-            <div class="conansuperache"><img src="img/conansuperache.jpg" alt="conansuperache"></div>
-            <div class="conanfoundheaven"><img src="img/conanfoundheaven.jpg" alt="conanfoundheaven"></div>
-            <div class="conanwishbone"><img src="img/conanwishbone.jpg" alt="conanwishbone"></div>
+
+          <div class="fanartconan f-carousel" id="myCarousel">
+            <div class="f-carousel__viewport">
+              <div class="conankidkrow f-carousel__slide">
+                <a href="img/conankidkrow.jpg" data-fancybox data-caption="galeria">
+                 <img src="img/conankidkrow.jpg" alt="conankidkrow">
+                </a>
+              </div>
+              <div class="conansuperache f-carousel__slide">
+                <a href="img/conansuperache.jpg" data-fancybox data-caption="galeria">
+                  <img src="img/conansuperache.jpg" alt="conankidkrow">
+                 </a>
+              </div>
+              <div class="conanfoundheaven f-carousel__slide">
+                <a href="img/conanfoundheaven.jpg" data-fancybox data-caption="galeria">
+                  <img src="img/conanfoundheaven.jpg" alt="conankidkrow">
+                 </a>
+              </div>
+              <div class="conanwishbone f-carousel__slide">
+                <a href="img/conanwishbone.jpg" data-fancybox data-caption="galeria">
+                  <img src="img/conanwishbone.jpg" alt="conankidkrow">
+                </a>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -228,10 +268,20 @@
               bocetaje, variaciones y version final</p>
           </div>
           <div class="procesopjs">
-            <div class="moodboard"><img src="img/Moodboard.png" alt="Moodboard"></div>
-            <div class="boceto"><img src="img/Boceto-leo.jpg" alt="boceto"></div>
-            <div class="circus"><img src="img/Circus.jpg" alt="circus"></div>
-            <div class="ocs"><img src="img/ocs.jpg" alt="ocs"></div>
+            <div class="moodboard">
+              <a href="img/Moodboard.png" data-fancybox data-caption="galeria">
+                <img src="img/Moodboard.png" alt="Moodboard">
+              </a>
+            </div>
+            <div class="boceto">
+              <img src="img/Boceto-leo.jpg" alt="boceto">
+            </div>
+            <div class="circus">
+              <img src="img/Circus.jpg" alt="circus">
+            </div>
+            <div class="ocs">
+              <img src="img/ocs.jpg" alt="ocs">
+            </div>
           </div>
         </div>
 
@@ -271,84 +321,95 @@
   <div class="portafoliopublicidad">
     <img src="img/portafoliopubli.gif" alt="portafolio">
   </div>
+  <div class="sub">
+    <div class="procesodeguess">
+      <div class="miproceso">Mi proceso</div>
+      <div class="cine"><img src="img/Cintadepeli.png" alt="cine"></div>
+      <div class="gurl">
+        <iframe
+          src="https://www.youtube.com/embed/5tXDhic5mwI?autoplay=1&mute=1&loop=1&playlist=5tXDhic5mwI&controls=0&modestbranding=1&rel=0&iv_load_policy=3"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div id="contacto" class="contacto3">
+      <div class="llamado">
+        <div class="mano"><img src="img/mano.png" alt=""></div>
+      </div>
+      <div class="footredes">
+        <a href="https://www.youtube.com/@Dizzy_D3sing" target="_blank" class="red-social-link">
+          <div class="ytverde">
+            <img src="img/youtubeverde.png" alt="youtube">
+            <div class="ytv">@Dizzy_D3sign</div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/Dizzy.d3sign" target="_blank" class="red-social-link">
+          <div class="igverde">
+            <img src="img/instagramverde.png" alt="instagram">
+            <div class="igv">@Dizzy.d3sign</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="contacto-container">
+      <form class="formulario-box" netlify>
+        <div class="fila-input">
+          <div class="campo"><label>Nombre y Apellido</label>
+            <input type="text" name="nombre" placeholder="nombre...">
+          </div>
+          <div class="campo"><label>Motivo</label>
+            <input type="text" name="motivo" placeholder="¿porque?">
+          </div>
+        </div>
+
+        <div class="fila-input">
+          <div class="campo"><label>Email</label>
+            <input type="email" name="email" placeholder="@mail.com">
+          </div>
+          <div class="campo">
+            <label>País</label>
+            <select name="pais">
+              <option value="argentina">Argentina</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="campo-full">
+          <label>Escribime...</label>
+          <textarea name="mensaje" placeholder="Texto..."></textarea>
+        </div>
+
+        <button type="submit" class="boton-enviar">Enviar</button>
+      </form>
+
+    </div>
+    <div class="saludo">
+      <img src="img/Graciaspj.png" alt="Graciaspj">
+      <div class="saludotexto">
+        <div class="gracias">Gracias :D</div>
+        <div class="marca">Dizzy Design</div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  
+  <footer>
+    <div class="portafoliopublicidad">
+      <img src="img/portafoliopubli.gif" alt="portafolio">
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+  <script src="js/script.js"></script>
+  
+
 </body>
-<footer>
-  <div class="procesodeguess">
-    <div class="miproceso">Mi proceso</div>
-    <div class="cine"><img src="img/Cintadepeli.png" alt="cine"></div>
-    <div class="gurl">
-      <iframe
-        src="https://www.youtube.com/embed/5tXDhic5mwI?autoplay=1&mute=1&loop=1&playlist=5tXDhic5mwI&controls=0&modestbranding=1&rel=0&iv_load_policy=3"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-
-  <div id="contacto" class="contacto3">
-    <div class="llamado">
-      <div class="mano"><img src="img/mano.png" alt=""></div>
-    </div>
-    <div class="footredes">
-      <a href="https://www.youtube.com/@Dizzy_D3sing" target="_blank" class="red-social-link">
-        <div class="ytverde">
-          <img src="img/youtubeverde.png" alt="youtube">
-          <div class="ytv">@Dizzy_D3sign</div>
-        </div>
-      </a>
-      <a href="https://www.instagram.com/Dizzy.d3sign" target="_blank" class="red-social-link">
-        <div class="igverde">
-          <img src="img/instagramverde.png" alt="instagram">
-          <div class="igv">@Dizzy.d3sign</div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="contacto-container">
-    <form class="formulario-box" netlify>
-      <div class="fila-input">
-        <div class="campo"><label>Nombre y Apellido</label>
-          <input type="text" name="nombre" placeholder="nombre...">
-        </div>
-        <div class="campo"><label>Motivo</label>
-          <input type="text" name="motivo" placeholder="¿porque?">
-        </div>
-      </div>
-
-      <div class="fila-input">
-        <div class="campo"><label>Email</label>
-          <input type="email" name="email" placeholder="@mail.com">
-        </div>
-        <div class="campo">
-          <label>País</label>
-          <select name="pais">
-            <option value="argentina">Argentina</option>
-            <option value="otro">Otro</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="campo-full">
-        <label>Escribime...</label>
-        <textarea name="mensaje" placeholder="Texto..."></textarea>
-      </div>
-
-      <button type="submit" class="boton-enviar">Enviar</button>
-    </form>
-
-  </div>
-  <div class="saludo">
-    <img src="img/Graciaspj.png" alt="Graciaspj">
-    <div class="saludotexto">
-      <div class="gracias">Gracias :D</div>
-      <div class="marca">Dizzy Design</div>
-    </div>
-  </div>
-
-
-</footer>
-<div class="portafoliopublicidad">
-  <img src="img/portafoliopubli.gif" alt="portafolio">
-</div>
-
 </html>
